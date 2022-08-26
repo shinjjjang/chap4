@@ -1,0 +1,1 @@
+gcc -DDEBUG -DC_FLAGS -static -Wl,--gc-sections -DDEBUG -DLINKER_FLAGS -rdynamic CMakeFiles/reverse.out.dir/4_2i.c.o CMakeFiles/reverse.out.dir/4_2m.c.o -o reverse.out 

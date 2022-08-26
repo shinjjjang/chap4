@@ -1,0 +1,3 @@
+/home/ubuntu/project/temp/chap4/4-2/CMakeFiles/reverse.out.dir
+/home/ubuntu/project/temp/chap4/4-2/CMakeFiles/edit_cache.dir
+/home/ubuntu/project/temp/chap4/4-2/CMakeFiles/rebuild_cache.dir
