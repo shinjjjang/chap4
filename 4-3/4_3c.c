@@ -1,12 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include "4_3.h"
 
 linkedList_h* createLinkedList_h(void){
 	linkedList_h* CL;
-C: = (linkedList_h*)malloc(sizeof(linkedList_h));
-   CL -> head = NULL;
-   return CL;
+	CL = (linkedList_h*)malloc(sizeof(linkedList_h));
+   	CL -> head = NULL;
+   	return CL;
 }
 
 void printList(linkedList_h* CL){
@@ -19,12 +20,12 @@ void printList(linkedList_h* CL){
 	do{
 		printf("%s", p -> data);
 		p = p -> link;
-		if(p != CL -> head) print(", ");
+		if(p != CL -> head) printf(", ");
 	}while(p != CL -> head);
 	printf(") \n");
 }
 
-void insertFirstNode(linkedList_h* CL, char x){
+void insertFirstNode(linkedList_h* CL, char* x){
 	listNode* newNode;
 	listNode* temp;
 	newNode = (listNode*)malloc(sizeof(listNode));
@@ -43,7 +44,7 @@ void insertFirstNode(linkedList_h* CL, char x){
 	}
 }
 
-void insertMiddleNode(createLinkedList_h* CL,, listNode* pre, char* x){
+void insertMiddleNode(linkedList_h* CL, listNode* pre, char* x){
 	listNode* newNode;
 	newNode = (listNode*)malloc(sizeof(listNode));
 	strcpy(newNode -> data, x);
@@ -70,7 +71,7 @@ void deleteNode(linkedList_h* CL, listNode* old){
 	else{
 		pre = CL -> head;
 		while(pre -> link != old){
-			pr = pre -> link;
+			pre = pre -> link;
 		}
 		pre -> link = old -> link;
 		if(old == CL -> head)

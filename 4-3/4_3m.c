@@ -1,7 +1,7 @@
 #include "4_3.h"
 
 int main(){
-	linkedList* CL;
+	linkedList_h* CL;
 	listNode* p;
 
 	CL = createLinkedList_h();
@@ -22,7 +22,7 @@ int main(){
 
 	printf("\n(5) 원형 연결 리스트에서 [수] 노드 삭제하기! \n");
 	p = searchNode(CL, "수"); deleteNode(CL, p);
-	printfList(CL);
+	printList(CL);
 
 	getchar(); return 0;
 }
